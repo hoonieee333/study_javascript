@@ -30,4 +30,4 @@ console.log(number); // 30
 
 // null 병합 연산자
 
-//////
+//
