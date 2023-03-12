@@ -54,8 +54,18 @@ function foo() {
 // 함수 표현식으로 변환해 함수 객체를 생성하지만, 정확히 동일하게 동작하는 것은 아님.
 
 // 함수의 호이스팅
+console.log(add(1, 2));
+console.log(sub(2, 1));
 
+function add(argX, argY) {
+  return argX + argY;
+}
 
+var sub = function (argX, argY) {
+  return argX - argY;
+}
+
+// -> 함수 선언문의 경우 런타임 전 객체 생성
 
 
 
